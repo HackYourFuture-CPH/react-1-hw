@@ -30,13 +30,13 @@ const values = [
 const OurValues = () => {
   return (
     <>
-      <ul>
+      <ul className={styles.ulContainer}>
         {values.map((value) => (
           <li>
-            <div>{value.number}</div>
-            <div>{value.title}</div>
-            <div>{value.description}</div>
-            <div></div>
+            <div className={styles.number}>{value.number}</div>
+            <div className={styles.title}>{value.title}</div>
+            <div className={styles.description}>{value.description}</div>
+            <div className={styles.divider}></div>
           </li>
         ))}
       </ul>
