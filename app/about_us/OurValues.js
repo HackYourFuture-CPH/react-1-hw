@@ -11,7 +11,7 @@ const OurValues = () => {
         are committed to pushing the boundaries of what is possible.
       </p>
       <div></div>
-      <h1>02</h1>
+      <h1 className={styles.hugeH1}>02</h1>
       <h2>Innovation</h2>
       <p>
         At Galactica, we prioritize cutting-edge technology and innovation. We
@@ -20,7 +20,7 @@ const OurValues = () => {
         space journeys available.
       </p>
       <div></div>
-      <h1>03</h1>
+      <h1 className={styles.hugeH1}>03</h1>
       <h2>Sustainability</h2>
       <p>
         We are committed to making space exploration sustainable for future
@@ -29,7 +29,7 @@ const OurValues = () => {
         responsibility towards our universe.
       </p>
       <div></div>
-      <h1>04</h1>
+      <h1 className={styles.hugeH1}>04</h1>
       <h2>Community</h2>
       <p>
         We believe in the power of collective exploration. Our journeys are not
