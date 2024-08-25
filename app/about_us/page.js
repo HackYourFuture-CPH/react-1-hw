@@ -1,4 +1,4 @@
-import styles from './page.module.css';
+import styles from "./page.module.css";
 
 // TASK - React 1 week 1
 // After you are finished with creating the page, move the OurValues, OurCrew, OurPartners components into their own files
@@ -6,12 +6,43 @@ import styles from './page.module.css';
 // import and use the components from the newly created files
 
 const OurValues = () => {
-  // TASK - React 1 week 1
-  // Create the "Our Values" section
-  // Use the descriptions provided in /app/about_us/README.md
-  // Some inspiration ideas found in /data/inspiration_about_us
   return (
-    <p> ADD OUR VALUES HERE </p>
+    <>
+      <h1>01</h1>
+      <h2>Exploration</h2>
+      <p>
+        We are driven by a deep-seated desire to explore the unknown. We believe
+        that the pursuit of discovery is at the heart of human nature, and we
+        are committed to pushing the boundaries of what is possible.
+      </p>
+      <div></div>
+      <h1>02</h1>
+      <h2>Innovation</h2>
+      <p>
+        At Galactica, we prioritize cutting-edge technology and innovation. We
+        are constantly evolving our spacecraft, safety protocols, and services
+        to ensure that our travelers experience the most advanced and secure
+        space journeys available.
+      </p>
+      <div></div>
+      <h1>03</h1>
+      <h2>Sustainability</h2>
+      <p>
+        We are committed to making space exploration sustainable for future
+        generations. Our space missions are designed to minimize environmental
+        impact, both on Earth and in space, and to foster a spirit of
+        responsibility towards our universe.
+      </p>
+      <div></div>
+      <h1>04</h1>
+      <h2>Community</h2>
+      <p>
+        We believe in the power of collective exploration. Our journeys are not
+        just about reaching new destinations; they are about building a
+        community of space enthusiasts who share a passion for the stars.
+      </p>
+      <div></div>
+    </>
   );
 };
 
@@ -21,10 +52,8 @@ const OurCrew = () => {
   // Use the descriptions provided in /app/about_us/README.md
   // Use the pictures from /public/crew
   // Some inspiration ideas found in /data/inspiration_about_us
-  return (
-    <p> ADD OUR CREW HERE </p>
-  );
-}
+  return <p> ADD OUR CREW HERE </p>;
+};
 
 const OurPartners = () => {
   // TASK - React 1 week 1
@@ -32,11 +61,8 @@ const OurPartners = () => {
   // Use the descriptions provided in /app/about_us/README.md
   // Use the pictures from /public/crew
   // Some inspiration ideas found in /data/inspiration_about_us
-  return (
-    <p> ADD OUR Partners HERE </p>
-  );
-}
-
+  return <p> ADD OUR Partners HERE </p>;
+};
 
 export const Crew = () => {
   return (
@@ -45,18 +71,18 @@ export const Crew = () => {
         <h1>About us</h1>
         <section className="card">
           <h2>Our Values</h2>
-          <OurValues/>
+          <OurValues />
         </section>
         <section className="card">
           <h2>The crew</h2>
-          <OurCrew/>
+          <OurCrew />
         </section>
 
-         {/* TASK - React 1 week 1 */}
-         {/* Add in the "OurPartners" component here */}
+        {/* TASK - React 1 week 1 */}
+        {/* Add in the "OurPartners" component here */}
       </main>
     </div>
   );
-}
+};
 
 export default Crew;
