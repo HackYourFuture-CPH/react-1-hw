@@ -29,18 +29,16 @@ const values = [
 
 const OurValues = () => {
   return (
-    <>
-      <ul className={styles.ulContainer}>
-        {values.map((value, index) => (
-          <li key={index}>
-            <h1 className={styles.number}>{value.number}</h1>
-            <h2 className={styles.title}>{value.title}</h2>
-            <p className={styles.description}>{value.description}</p>
-            <div className={styles.divider}></div>
-          </li>
-        ))}
-      </ul>
-    </>
+    <ul className={styles.ulContainer}>
+      {values.map((value, index) => (
+        <li key={index}>
+          <h1 className={styles.number}>{value.number}</h1>
+          <h2 className={styles.title}>{value.title}</h2>
+          <p className={styles.description}>{value.description}</p>
+          <div className={styles.divider}></div>
+        </li>
+      ))}
+    </ul>
   );
 };
 
