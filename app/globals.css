@@ -226,3 +226,42 @@ button {
   width: 2rem;
   margin-right: 0.75rem;
 }
+
+.value-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+.value-container {
+  display: flex;
+  flex: 0 1 calc(50% - 20px);
+  justify-content: space-around;
+  flex-direction: column;
+  border-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: calc(50%);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  justify-self: center;
+}
+
+.value-icons {
+  height: 50px;
+  align-self: center;
+  width: 50px;
+  margin: 10px;
+}
+
+.value-title {
+  align-self: center;
+  margin: 10%;
+}
+.value-text {
+  display: flex;
+  align-self: center;
+  margin: 10%;
+  text-align: center;
+}
