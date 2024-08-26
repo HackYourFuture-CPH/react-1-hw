@@ -51,7 +51,7 @@ const OurCrew = () => {
           <li key={index} className={styles.listItem}>
             <img
               src={member.image}
-              alt={member.titleAndName}
+              alt={member.name}
               className={styles.image}
             />
             <div className={styles.name}>{member.name}</div>
