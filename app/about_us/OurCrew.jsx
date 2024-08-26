@@ -41,10 +41,10 @@ const crew = [
 const CrewMember = ({ name, image, title, duties }) => {
   return (
     <li className={styles.listItem}>
-      <img src={image} alt={name} className={styles.image} />
-      <div className={styles.name}>{name}</div>
-      <div className={styles.title}>{title}</div>
-      <div className={styles.duties}>{duties}</div>
+      <img src={image} alt={`Image of ${name}`} className={styles.image} />
+      <h1 className={styles.name}>{name}</h1>
+      <h2 className={styles.title}>{title}</h2>
+      <p className={styles.duties}>{duties}</p>
     </li>
   );
 };
