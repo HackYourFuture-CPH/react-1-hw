@@ -25,7 +25,7 @@ export const Crew = () => {
         <section className="card">
           <div className="card-title">
             <img className="title-icons" src="/icons/crew.png"></img>
-            <h2>The crew</h2>
+            <h2>Our Crew</h2>
           </div>
           <OurCrew />
         </section>
