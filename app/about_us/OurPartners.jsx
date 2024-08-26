@@ -1,3 +1,5 @@
+import styles from "./OurPartners.module.css";
+
 const partners = [
   { partner: "alphabet", logo: "/business_partners/alphabet-logo.png" },
   { partner: "amazon", logo: "/business_partners/amazon_logo.png" },
@@ -16,10 +18,14 @@ const OurPartners = () => {
         We collaborate with some of the most respected names in the space and
         technology industries to make every journey extraordinary.
       </p>
-      <ul>
+      <ul className={styles.ulContainer}>
         {partners.map((image, index) => (
-          <li key={index}>
-            <img src={image.logo} alt={image.partner} />
+          <li key={index} className={styles.listItem}>
+            <img
+              src={image.logo}
+              alt={image.partner}
+              className={styles.image}
+            />
           </li>
         ))}
       </ul>
