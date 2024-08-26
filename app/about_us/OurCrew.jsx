@@ -6,28 +6,28 @@ const crew = [
     title: "Captain",
     duties:
       "A former NASA astronaut with over 15 years of experience, Captain Vega leads our missions with unparalleled expertise and a passion for space exploration.",
-    image: "/crew/image-anousheh-ansari.png",
+    image: "/crew/Sarah-Vega.png",
   },
   {
     name: "Leo Redding",
     title: "Dr.",
     duties:
       "Our chief astrophysicist, Dr. Redding, is a renowned scientist who has contributed to major space discoveries. He ensures that every journey is as educational as it is exhilarating.",
-    image: "/crew/image-douglas-hurley.png",
+    image: "/crew/Leo-Redding.png",
   },
   {
     name: "Hana Lee",
     title: "Chief Engineer",
     duties:
       "With her extensive background in aerospace engineering, Hana Lee is responsible for the state-of-the-art technology that powers our spacecraft. Her innovation ensures that our travelers are always in safe hands.",
-    image: "/crew/image-mark-shuttleworth.png",
+    image: "/crew/Hana-Lee.png",
   },
   {
     name: "Alex Santos",
     title: "Mission Specialist",
     duties:
       "As a mission specialist, Alex’s job is to ensure that every aspect of the journey runs smoothly. With a background in both science and adventure tourism, Alex is the perfect guide for our space travelers.",
-    image: "/crew/image-victor-glover.png",
+    image: "/crew/Alex-Santos.png",
   },
   {
     name: "Maya Patel",
