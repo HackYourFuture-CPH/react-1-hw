@@ -44,14 +44,14 @@ const OurCrew = () => {
       <ul className={styles.ulContainer}>
         {crew.map((member) => (
           <li className={styles.listItem}>
-            <div className={styles.name}>{member.name}</div>
-            <div className={styles.title}>{member.title}</div>
-            <div className={styles.duties}>{member.duties}</div>
             <img
               src={member.image}
               alt={member.titleAndName}
               className={styles.image}
             />
+            <div className={styles.name}>{member.name}</div>
+            <div className={styles.title}>{member.title}</div>
+            <div className={styles.duties}>{member.duties}</div>
           </li>
         ))}
       </ul>
