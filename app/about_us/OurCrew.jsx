@@ -1,3 +1,5 @@
+import styles from "./OurCrew.module.css";
+
 const crew = [
   {
     titleAndName: "Captain Sarah Vega",
@@ -34,12 +36,16 @@ const crew = [
 const OurCrew = () => {
   return (
     <>
-      <ul>
+      <ul className={styles.ulContainer}>
         {crew.map((member) => (
-          <li>
+          <li className={styles.listItem}>
             <div>{member.titleAndName}</div>
-            <div>{member.duties}</div>
-            <img src={member.image} alt={member.titleAndName} />
+            <div >{member.duties}</div>
+            <img
+              src={member.image}
+              alt={member.titleAndName}
+              className={styles.image}
+            />
           </li>
         ))}
       </ul>
