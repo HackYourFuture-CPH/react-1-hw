@@ -1,11 +1,6 @@
 import styles from "./OurPartners.module.css";
 
 const OurPartners = () => {
-  // TASK - React 1 week 1
-  // Create the "Our Crew section"
-  // Use the descriptions provided in /app/about_us/README.md
-  // Use the pictures from /public/crew
-  // Some inspiration ideas found in /data/inspiration_about_us
   return (
     <>
       <div className={styles["logo-container"]}>
