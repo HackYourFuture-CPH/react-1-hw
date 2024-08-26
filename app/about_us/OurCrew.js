@@ -1,8 +1,6 @@
 import { Img } from "@chakra-ui/react";
 import styles from "./OurCrew.module.css";
-import image1 from "../../public/crew/image-anousheh-ansari.png";
-import image2 from "../../public/crew/image-douglas-hurley.png";
-import image3 from "../../public/crew/image-mark-shuttleworth.png";
+
 import image4 from "../../public/crew/image-victor-glover.png";
 import image5 from "../../public/crew/nasaCrewMember1.jpg";
 import image6 from "../../public/crew/nasaCrewMember2.webp";
@@ -26,7 +24,6 @@ export default function OurCrew() {
             className={styles.crewImages}
             src={image5}
             alt="picture"
-            // Makes the image fill its container
             priority
           />
           <h4>Captain Sarah Vega:</h4>
