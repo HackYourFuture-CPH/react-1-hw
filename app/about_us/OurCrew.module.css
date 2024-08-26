@@ -10,7 +10,7 @@
 }
 
 .listItem {
-  width: 14rem;
+  width: 16rem;
   height: 31rem;
 }
 
@@ -37,4 +37,6 @@
   max-width: 100%;
   width: auto;
   height: 13rem;
+  display: block;
+  margin: 0 auto;
 }
