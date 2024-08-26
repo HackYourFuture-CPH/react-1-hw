@@ -38,6 +38,17 @@ const crew = [
   },
 ];
 
+const CrewMember = ({ name, image, title, duties }) => {
+  return (
+    <li className={styles.listItem}>
+      <img src={image} alt={name} className={styles.image} />
+      <div className={styles.name}>{name}</div>
+      <div className={styles.title}>{title}</div>
+      <div className={styles.duties}>{duties}</div>
+    </li>
+  );
+};
+
 const OurCrew = () => {
   return (
     <>
@@ -48,16 +59,13 @@ const OurCrew = () => {
       </p>
       <ul className={styles.ulContainer}>
         {crew.map((member, index) => (
-          <li key={index} className={styles.listItem}>
-            <img
-              src={member.image}
-              alt={member.name}
-              className={styles.image}
-            />
-            <div className={styles.name}>{member.name}</div>
-            <div className={styles.title}>{member.title}</div>
-            <div className={styles.duties}>{member.duties}</div>
-          </li>
+          <CrewMember
+            key={index}
+            name={member.name}
+            image={member.image}
+            title={member.title}
+            duties={member.duties}
+          />
         ))}
       </ul>
     </>
