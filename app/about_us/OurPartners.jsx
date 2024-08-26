@@ -18,8 +18,8 @@ const OurPartners = () => {
         technology industries to make every journey extraordinary.
       </p>
       <ul>
-        {partners.map((image) => (
-          <li>
+        {partners.map((image,index) => (
+          <li key={index}>
             <img src={image.logo} alt={image.partner} />;
           </li>
         ))}

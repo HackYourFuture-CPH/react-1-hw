@@ -47,8 +47,8 @@ const OurCrew = () => {
         common goal: to make space travel accessible and exciting for all.
       </p>
       <ul className={styles.ulContainer}>
-        {crew.map((member) => (
-          <li className={styles.listItem}>
+        {crew.map((member, index) => (
+          <li key={index} className={styles.listItem}>
             <img
               src={member.image}
               alt={member.titleAndName}

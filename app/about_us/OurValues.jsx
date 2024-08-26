@@ -31,8 +31,8 @@ const OurValues = () => {
   return (
     <>
       <ul className={styles.ulContainer}>
-        {values.map((value) => (
-          <li>
+        {values.map((value, index) => (
+          <li key={index}>
             <div className={styles.number}>{value.number}</div>
             <div className={styles.title}>{value.title}</div>
             <div className={styles.description}>{value.description}</div>
