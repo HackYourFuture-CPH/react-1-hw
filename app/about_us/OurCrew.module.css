@@ -7,11 +7,12 @@
   gap: 2rem;
   color: white;
   margin-top: 4rem;
+  padding: 2rem;
 }
 
 .listItem {
   width: 16rem;
-  height: 31rem;
+  height: 30rem;
 }
 
 .title {

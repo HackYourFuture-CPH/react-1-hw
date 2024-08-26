@@ -4,7 +4,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   color: white;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  padding: 1rem;
 }
 
 .number {
@@ -23,7 +24,7 @@
 .description {
   font-size: 1rem;
   color: white;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   font-weight: 200;
 }
 
