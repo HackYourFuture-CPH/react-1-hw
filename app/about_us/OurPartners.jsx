@@ -23,7 +23,7 @@ const OurPartners = () => {
           <li key={index} className={styles.listItem}>
             <img
               src={image.logo}
-              alt={image.partner}
+              alt={`Logo of ${image.partner}`}
               className={styles.image}
             />
           </li>
