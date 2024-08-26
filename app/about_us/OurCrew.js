@@ -1,10 +1,12 @@
+import styles from "./OurCrew.module.css";
 const OurCrew = () => {
-  // TASK - React 1 week 1
-  // Create the "Our Crew section"
-  // Use the descriptions provided in /app/about_us/README.md
-  // Use the pictures from /public/crew
-  // Some inspiration ideas found in /data/inspiration_about_us
-  return <p> ADD OUR CREW HERE sa</p>;
+  return (
+    <p className={styles["crew-p"]}>
+      Our crew is the heart and soul of Galactica. We are a diverse team of seasoned space
+      explorers, engineers, and visionaries who are united by a common goal: to make space travel
+      accessible and exciting for all.
+    </p>
+  );
 };
 
 export default OurCrew;

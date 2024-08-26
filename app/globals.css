@@ -257,11 +257,11 @@ button {
 
 .value-title {
   align-self: center;
-  margin: 10%;
+  margin: 5%;
 }
 .value-text {
   display: flex;
   align-self: center;
-  margin: 10%;
+  margin: 5%;
   text-align: center;
 }
