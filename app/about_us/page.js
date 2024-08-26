@@ -10,19 +10,30 @@ export const Crew = () => {
       <main className="mainContent">
         <h1>About us</h1>
         <section className="card">
-          <h2>Our Mission</h2>
+          <div className="card-title">
+            <img className="title-icons" src="/icons/mission.png"></img>
+            <h2>Our Mission</h2>
+          </div>
           <OurMission />
         </section>
         <section className="card">
-          <h2>Our Values</h2>
+          <div className="card-title">
+            <img className="title-icons" src="/icons/value.png"></img> <h2>Our Values</h2>
+          </div>
           <OurValues />
         </section>
         <section className="card">
-          <h2>The crew</h2>
+          <div className="card-title">
+            <img className="title-icons" src="/icons/crew.png"></img>
+            <h2>The crew</h2>
+          </div>
           <OurCrew />
         </section>
         <section className="card">
-          <h2>Our Partners</h2>
+          <div className="card-title">
+            <img className="title-icons" src="/icons/partners.png"></img>
+            <h2>Our Partners</h2>
+          </div>
           <OurPartners />
         </section>
       </main>

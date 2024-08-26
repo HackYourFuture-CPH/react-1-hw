@@ -101,8 +101,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-block-end: var(--spacing-08);
   color: var(--primary-text-color);
+  align-content: center;
 }
 
 p,
@@ -138,6 +138,11 @@ button {
   position: relative;
   padding: var(--spacing-12);
   margin: var(--spacing-16);
+}
+
+.card-title {
+  display: flex;
+  margin-bottom: 1rem;
 }
 
 .card::before {
@@ -214,4 +219,10 @@ button {
 
 .fullBGpicture > main {
   overflow: auto;
+}
+
+.title-icons {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.75rem;
 }
