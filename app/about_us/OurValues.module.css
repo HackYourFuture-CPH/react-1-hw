@@ -1,10 +1,10 @@
 .ulContainer {
   list-style-type: none;
-  margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   color: white;
+  margin-top: 3rem;
 }
 
 .number {
