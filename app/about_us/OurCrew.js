@@ -1,5 +1,4 @@
 import { Img } from "@chakra-ui/react";
-import styles from "./OurCrew.module.css";
 
 import image4 from "../../public/crew/image-victor-glover.png";
 import image5 from "../../public/crew/nasaCrewMember1.jpg";
@@ -7,14 +6,16 @@ import image6 from "../../public/crew/nasaCrewMember2.webp";
 import Image from "next/image";
 import HanaLeePic from "../../public/crew/astronautHanaLee.webp";
 import PatelPic from "../../public/crew/astronautPatel.webp";
+import styles from "./OurCrew.module.css";
+
 export default function OurCrew() {
   return (
     <>
-      <h4 style={{ margin: "60px" }}>
+      <h4 className={styles.theH4}>
         Our crew is the heart and soul of Galactica. We are a diverse team of
         seasoned space explorers, engineers, and visionaries who are united by a
         common goal:{" "}
-        <span style={{ color: "pink", margin: "30px" }}>
+        <span className={styles.theH4span}>
           to make space travel accessible and exciting for all.
         </span>
       </h4>
@@ -26,7 +27,7 @@ export default function OurCrew() {
             alt="picture"
             priority
           />
-          <h4>Captain Sarah Vega:</h4>
+          <h6>Captain Sarah Vega:</h6>
           <p className={styles.paragraph}>
             {" "}
             A former NASA astronaut with over 15 years of experience, Captain
@@ -42,7 +43,7 @@ export default function OurCrew() {
             objectFit="cover"
             priority
           />
-          <h4>Dr. Leo Redding</h4>
+          <h6>Dr. Leo Redding</h6>
           <p className={styles.paragraph}>
             Our chief astrophysicist, Dr. Redding, is a renowned scientist who
             has contributed to major space discoveries. He ensures that every
@@ -57,7 +58,7 @@ export default function OurCrew() {
             objectFit="cover"
             priority
           />
-          <h4>Chief Engineer Hana Lee:</h4>
+          <h6>Chief Engineer Hana Lee:</h6>
           <p className={styles.paragraph}>
             With her extensive background in aerospace engineering, Hana Lee is
             responsible for the state-of-the-art technology that powers our
@@ -73,7 +74,7 @@ export default function OurCrew() {
             objectFit="cover"
             priority
           />
-          <h4>Mission Specialist Alex Santos:</h4>
+          <h6>Mission Specialist Alex Santos:</h6>
           <p className={styles.paragraph}>
             As a mission specialist, Alex’s job is to ensure that every aspect
             of the journey runs smoothly. With a background in both science and
@@ -89,7 +90,7 @@ export default function OurCrew() {
             objectFit="cover"
             priority
           />
-          <h4>Crew Member Maya Patel:</h4>
+          <h6>Crew Member Maya Patel:</h6>
           <p className={styles.paragraph}>
             Maya brings a unique blend of technical skills and customer service
             experience to the team. She’s always ready to assist with any needs
