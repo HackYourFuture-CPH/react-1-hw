@@ -34,7 +34,7 @@ const crew = [
     title: "Crew Member",
     duties:
       "Maya brings a unique blend of technical skills and customer service experience to the team. She’s always ready to assist with any needs and to make sure every traveler has an unforgettable experience.",
-    image: "/crew/image-victor-glover.png",
+    image: "/crew/Maya-Patel.png",
   },
 ];
 
