@@ -1,0 +1,43 @@
+.ulContainer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.listItem {
+  width: 16rem;
+  height: 30rem;
+}
+
+.title {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.name {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.duties {
+  font-size: 1rem;
+  color: white;
+  font-weight: 200;
+  width: 100%;
+}
+
+.image {
+  max-width: 100%;
+  width: auto;
+  height: 13rem;
+  display: block;
+  margin: 0 auto;
+}

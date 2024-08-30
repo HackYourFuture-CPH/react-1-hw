@@ -1,0 +1,50 @@
+.ulContainer {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  color: white;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.listItem {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+}
+
+.number {
+  font-size: 4rem;
+  color: white;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.description {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 2rem;
+  font-weight: 200;
+}
+
+.divider {
+  border-bottom: 1px solid #dbd8d8;
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .listItem {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

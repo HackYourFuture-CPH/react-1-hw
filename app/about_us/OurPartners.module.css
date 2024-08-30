@@ -1,0 +1,26 @@
+.ulContainer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.listItem {
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  max-width: 80%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
