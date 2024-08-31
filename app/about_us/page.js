@@ -11,7 +11,9 @@ const OurValues = () => {
   // Use the descriptions provided in /app/about_us/README.md
   // Some inspiration ideas found in /data/inspiration_about_us
   return (
-    <p> ADD OUR VALUES HERE </p>
+    <div>
+    <p>We believe in innovation, sustainability, and community.</p>
+    </div>
   );
 };
 
@@ -22,7 +24,17 @@ const OurCrew = () => {
   // Use the pictures from /public/crew
   // Some inspiration ideas found in /data/inspiration_about_us
   return (
-    <p> ADD OUR CREW HERE </p>
+   <div>
+    <p>Meet the best space travelers and scientist in the world.</p>
+    <img src="/crew/image-anousheh-ansari.png" alt="Anousheh Ansari" />
+    <p>Anousheh Ansari</p>
+    <img src="/crew/image-douglas-hurley.png" alt="Douglas Hurley" />
+    <p>Douglas Hurley</p>
+    <img src="/crew/image-victor-glover.png" alt="Victor Glover" />
+    <p>Victor Glover</p>
+    <img src="/crew/image-mark-shuttleworth.png" alt="Mark Shuttleworth" />
+    <p>Mark Shuttleworth</p>
+   </div>
   );
 }
 
@@ -33,7 +45,10 @@ const OurPartners = () => {
   // Use the pictures from /public/crew
   // Some inspiration ideas found in /data/inspiration_about_us
   return (
-    <p> ADD OUR Partners HERE </p>
+    <div>
+      <h2>Our Partners</h2>
+      <p>Collaboration with the best space agencies and tech companies.</p>
+    </div>
   );
 }
 
