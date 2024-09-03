@@ -28,7 +28,7 @@ const socialMedias = [
   },
   {
     url: "https://google.com",
-    title: "On the streets at night",
+    title: "Google",
     icon: "/socialmedia/google-icon.png",
   },
 ];
