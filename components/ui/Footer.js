@@ -3,6 +3,33 @@
 import { usePathname } from "next/navigation";
 import styles from "./Footer.module.css";
 import Link from "next/link";
+const socialMedias = [
+  {
+    url: "https://facebook.com",
+    title: "Facebook",
+    icon: "/socialmedia/facebook-icon.png",
+  },
+  {
+    url: "https://instagram.com",
+    title: "Instagram",
+    icon: "/socialmedia/instagram-icon.png",
+  },
+  {
+    url: "https://tiktok.com",
+    title: "Tiktok",
+    icon: "/socialmedia/tiktok-icon.png",
+  },
+  {
+    url: "https://linkedin.com",
+    title: "LinkedIn",
+    icon: "/socialmedia/linkedin-icon.png",
+  },
+  {
+    url: "https://google.com",
+    title: "On the streets at night",
+    icon: "/socialmedia/google-icon.png",
+  },
+];
 
 export const Footer = () => {
   const path = usePathname().split("?")[0];
