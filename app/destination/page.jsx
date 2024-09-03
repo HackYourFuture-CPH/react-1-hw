@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-
-import styles from "@/components/destination/destination.module.css";
 import { AddWishlistItem } from "@/components/destination/AddWishlistItem";
 import PlanetCard from "./PlanetCard";
 
@@ -35,14 +33,11 @@ const planets = [
 
 export const Destinations = () => {
   const [selectedPlanets, onAddPlanet] = useState([]);
-
-  let isPlanetSelected = false;
   let numberOfPlanets = 0;
 
-  const onAddOrRemovePlanet = (name, index) => {
-    // TASK - React 1 week 2
-    // Implement this function
-    // If you press the "ADD PLANET" the selected planet should display "SELECTED"
+  const onAddOrRemovePlanet = (name, index, isSelected, setIsSelected) => {
+    onAddPlanet([...selectedPlanets, name]);
+    setIsSelected(!isSelected);
 
     // And the counter should update, how many planets are selected (numberOfPlanets)
     console.log(
@@ -90,7 +85,6 @@ export const Destinations = () => {
           <h2>Possible destinations</h2>
           {planets.map((planet, index) => (
             <PlanetCard
-              isPlanetSelected={isPlanetSelected}
               onAddOrRemovePlanet={onAddOrRemovePlanet}
               planetName={planet.planetName}
               description={planet.description}
