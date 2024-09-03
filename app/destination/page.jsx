@@ -35,19 +35,13 @@ export const Destinations = () => {
   const [selectedPlanets, setSelectedPlanets] = useState([]);
   let numberOfPlanets = selectedPlanets.length;
 
-  const onAddPlanet = (name, index, isSelected, setIsSelected) => {
+  const onAddPlanet = (name, isSelected, setIsSelected) => {
     setSelectedPlanets([...selectedPlanets, name]);
     setIsSelected(true);
-    console.log(
-      `You selected the following planet: ${name}, with the index of ${index}`
-    );
   };
-  const onRemovePlanet = (name, index, isSelected, setIsSelected) => {
+  const onRemovePlanet = (name, isSelected, setIsSelected) => {
     setSelectedPlanets(selectedPlanets.filter((planet) => planet !== name));
     setIsSelected(false);
-    console.log(
-      `You selected the following planet: ${name}, with the index of ${index}`
-    );
   };
 
   return (
