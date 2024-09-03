@@ -50,3 +50,20 @@
 .footerList li {
   padding-block: var(--spacing-04);
 }
+
+.socialListItem {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+}
+.socialIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: var(--spacing-08);
+  object-fit: contain;
+}
+
+.socialListItem span {
+  display: inline-block;
+  vertical-align: top;
+}
