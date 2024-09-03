@@ -18,7 +18,7 @@ export const Footer = () => {
       </div>
       <div className={styles.pages}>
         <h3>Pages</h3>
-        <ul>
+        <ul className={styles.footerList}>
           <li>
             <Link href="/">Home</Link>
           </li>
