@@ -23,7 +23,7 @@ const planets = [
     planetName: "Moon",
     description:
       "Our closest celestial neighbor, the Moon, is a silent witness to Earth's history. With its stunning craters and desolate landscapes, the Moon offers a unique glimpse into space exploration's past and future, making it a perfect destination for lunar adventurers.",
-    thumbnail: "/destination//destination/image-moon.png",
+    thumbnail: "/destination/image-moon.png",
   },
   {
     planetName: "Titan",
@@ -88,22 +88,16 @@ export const Destinations = () => {
         </section>
         <section className="card">
           <h2>Possible destinations</h2>
-          {/* TASK - React 1 week 2 */}
-          {/* Add all 4 planets! Europa, Moon, Mars, Titan  */}
-          {/* Use the README.md file for descriptions */}
-          {/* name, description, thumbnail, isSelected, onAddOrRemovePlanet */}
-
-          <PlanetCard
-            isPlanetSelected={isPlanetSelected}
-            onAddOrRemovePlanet={onAddOrRemovePlanet}
-            planetName={planetName}
-            description={description}
-            thumbnail={thumbnail}
-          />
-          <PlanetCard
-            isPlanetSelected={isPlanetSelected}
-            onAddOrRemovePlanet={onAddOrRemovePlanet}
-          />
+          {planets.map((planet, index) => (
+            <PlanetCard
+              isPlanetSelected={isPlanetSelected}
+              onAddOrRemovePlanet={onAddOrRemovePlanet}
+              planetName={planet.planetName}
+              description={planet.description}
+              thumbnail={planet.thumbnail}
+              index={index}
+            />
+          ))}
         </section>
       </main>
     </div>
