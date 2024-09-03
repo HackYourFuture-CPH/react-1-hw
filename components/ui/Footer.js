@@ -3,6 +3,8 @@
 import { usePathname } from "next/navigation";
 import styles from "./Footer.module.css";
 import Link from "next/link";
+import SocialMediaItem from "./SocialMediaItem";
+
 const socialMedias = [
   {
     url: "https://facebook.com",
@@ -64,21 +66,14 @@ export const Footer = () => {
       <div className={styles.footerLinks}>
         <h3>Follow us</h3>
         <ul className={styles.footerList}>
-          <li>
-            <a href="https://facebook.com">Facebook</a>
-          </li>
-          <li>
-            <a href="https://instagram.com">Instagram</a>
-          </li>
-          <li>
-            <a href="https://tiktok.com">Tiktok</a>
-          </li>
-          <li>
-            <a href="https://linkedin.com">LinkedIn</a>
-          </li>
-          <li>
-            <a href="https://google.com">On the streets at night</a>
-          </li>
+          {socialMedias.map((media, index) => (
+            <SocialMediaItem
+              url={media.url}
+              title={media.title}
+              icon={media.icon}
+              key={index}
+            />
+          ))}
           {/* TASK - React 1 week 2 */}
           {/* Create a <SocialMediaItem /> component and replace all of the list items! */}
           {/* it should accept the following props */}
