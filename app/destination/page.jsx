@@ -50,11 +50,11 @@ export const Destinations = () => {
         <h1>Travel destinations</h1>
         <section className="card">
           <h2>Wishlist</h2>
-          {/* TASK - React 1 week 2 */}
-          {/* Display the number Of selected planets */}
-          {/* Display the "no planets" message if it is empty! */}
-          <p>No planets in wishlist :(</p>
-          <p>You have {numberOfPlanets} in your wishlist</p>
+          {numberOfPlanets === 0 ? (
+            <p>No planets in wishlist :(</p>
+          ) : (
+            <p>You have {numberOfPlanets} in your wishlist</p>
+          )}
           <b>List coming soon after lesson 3!</b>
 
           {/* STOP! - this is for week 3!*/}
@@ -82,10 +82,6 @@ export const Destinations = () => {
         </section>
         <section className="card">
           <h2>Possible destinations</h2>
-          <p>
-            {numberOfPlanets}
-            {selectedPlanets}
-          </p>
           {planets.map((planet, index) => (
             <PlanetCard
               onAddPlanet={onAddPlanet}
