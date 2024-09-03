@@ -35,11 +35,11 @@ export const Destinations = () => {
   const [selectedPlanets, setSelectedPlanets] = useState([]);
   let numberOfPlanets = selectedPlanets.length;
 
-  const onAddPlanet = (name, isSelected, setIsSelected) => {
+  const onAddPlanet = (name, setIsSelected) => {
     setSelectedPlanets([...selectedPlanets, name]);
     setIsSelected(true);
   };
-  const onRemovePlanet = (name, isSelected, setIsSelected) => {
+  const onRemovePlanet = (name, setIsSelected) => {
     setSelectedPlanets(selectedPlanets.filter((planet) => planet !== name));
     setIsSelected(false);
   };

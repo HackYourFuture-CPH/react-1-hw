@@ -21,8 +21,8 @@ function PlanetCard({
         className="roundButton"
         onClick={() => {
           !isSelected
-            ? onAddPlanet(planetName, isSelected, setIsSelected)
-            : onRemovePlanet(planetName, isSelected, setIsSelected);
+            ? onAddPlanet(planetName, setIsSelected)
+            : onRemovePlanet(planetName, setIsSelected);
         }}
       >
         {isSelected ? "REMOVE" : "ADD PLANET"}
