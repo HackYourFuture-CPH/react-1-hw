@@ -38,7 +38,6 @@ export const Destinations = () => {
   const onAddPlanet = (name, index, isSelected, setIsSelected) => {
     setSelectedPlanets([...selectedPlanets, name]);
     setIsSelected(true);
-    // And the counter should update, how many planets are selected (numberOfPlanets)
     console.log(
       `You selected the following planet: ${name}, with the index of ${index}`
     );
@@ -46,7 +45,6 @@ export const Destinations = () => {
   const onRemovePlanet = (name, index, isSelected, setIsSelected) => {
     setSelectedPlanets(selectedPlanets.filter((planet) => planet !== name));
     setIsSelected(false);
-    // And the counter should update, how many planets are selected (numberOfPlanets)
     console.log(
       `You selected the following planet: ${name}, with the index of ${index}`
     );
@@ -101,7 +99,7 @@ export const Destinations = () => {
               planetName={planet.planetName}
               description={planet.description}
               thumbnail={planet.thumbnail}
-              index={index}
+              key={index}
             />
           ))}
         </section>

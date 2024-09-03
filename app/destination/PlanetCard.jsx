@@ -6,7 +6,6 @@ function PlanetCard({
   planetName,
   description,
   thumbnail,
-  index,
 }) {
   const [isSelected, setIsSelected] = useState(false);
   return (
