@@ -10,7 +10,11 @@ function PlanetCard({
   const [isSelected, setIsSelected] = useState(false);
   return (
     <div className={styles.planetCard}>
-      <img className={styles.planetThumbnail} src={thumbnail} alt="" />
+      <img
+        className={styles.planetThumbnail}
+        src={thumbnail}
+        alt={`Thumbnail of ${planetName}`}
+      />
       <div className={styles.planetDescription}>
         <h2>
           {planetName} {isSelected ? "- SELECTED" : ""}
