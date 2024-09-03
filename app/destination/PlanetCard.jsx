@@ -1,7 +1,8 @@
 import styles from "@/components/destination/destination.module.css";
 import { useState } from "react";
 function PlanetCard({
-  onAddOrRemovePlanet,
+  onAddPlanet,
+  onRemovePlanet,
   planetName,
   description,
   thumbnail,
@@ -19,9 +20,11 @@ function PlanetCard({
       </div>
       <button
         className="roundButton"
-        onClick={() =>
-          onAddOrRemovePlanet(planetName, index, isSelected, setIsSelected)
-        }
+        onClick={() => {
+          !isSelected
+            ? onAddPlanet(planetName, index, isSelected, setIsSelected)
+            : onRemovePlanet(planetName, index, isSelected, setIsSelected);
+        }}
       >
         {isSelected ? "REMOVE" : "ADD PLANET"}
       </button>

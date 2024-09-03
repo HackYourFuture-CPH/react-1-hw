@@ -32,16 +32,23 @@ const planets = [
 ];
 
 export const Destinations = () => {
-  const [selectedPlanets, onAddPlanet] = useState([]);
-  let numberOfPlanets = 0;
+  const [selectedPlanets, setSelectedPlanets] = useState([]);
+  let numberOfPlanets = selectedPlanets.length;
 
-  const onAddOrRemovePlanet = (name, index, isSelected, setIsSelected) => {
-    onAddPlanet([...selectedPlanets, name]);
-    setIsSelected(!isSelected);
-
+  const onAddPlanet = (name, index, isSelected, setIsSelected) => {
+    setSelectedPlanets([...selectedPlanets, name]);
+    setIsSelected(true);
     // And the counter should update, how many planets are selected (numberOfPlanets)
     console.log(
-      `You seleceted the following planet: ${name}, with the index of ${index}`
+      `You selected the following planet: ${name}, with the index of ${index}`
+    );
+  };
+  const onRemovePlanet = (name, index, isSelected, setIsSelected) => {
+    setSelectedPlanets(selectedPlanets.filter((planet) => planet !== name));
+    setIsSelected(false);
+    // And the counter should update, how many planets are selected (numberOfPlanets)
+    console.log(
+      `You selected the following planet: ${name}, with the index of ${index}`
     );
   };
 
@@ -83,9 +90,14 @@ export const Destinations = () => {
         </section>
         <section className="card">
           <h2>Possible destinations</h2>
+          <p>
+            {numberOfPlanets}
+            {selectedPlanets}
+          </p>
           {planets.map((planet, index) => (
             <PlanetCard
-              onAddOrRemovePlanet={onAddOrRemovePlanet}
+              onAddPlanet={onAddPlanet}
+              onRemovePlanet={onRemovePlanet}
               planetName={planet.planetName}
               description={planet.description}
               thumbnail={planet.thumbnail}
