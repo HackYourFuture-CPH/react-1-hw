@@ -12,7 +12,13 @@ const OurValues = () => {
   // Some inspiration ideas found in /data/inspiration_about_us
   return (
     <div>
-    <p>We believe in innovation, sustainability, and community.</p>
+    <p> We are driven by a deep-seated desire to explore the unknown. We believe that the pursuit of discovery is at the heart of human nature, and we are committed to pushing the boundaries of what is possible.
+
+Innovation: At Galactica, we prioritize cutting-edge technology and innovation. We are constantly evolving our spacecraft, safety protocols, and services to ensure that our travelers experience the most advanced and secure space journeys available.
+
+Sustainability: We are committed to making space exploration sustainable for future generations. Our space missions are designed to minimize environmental impact, both on Earth and in space, and to foster a spirit of responsibility towards our universe.
+
+Community: We believe in the power of collective exploration. Our journeys are not just about reaching new destinations; they are about building a community of space enthusiasts who share a passion for the stars.</p>
     </div>
   );
 };
@@ -24,17 +30,26 @@ const OurCrew = () => {
   // Use the pictures from /public/crew
   // Some inspiration ideas found in /data/inspiration_about_us
   return (
-   <div>
-    <p>Meet the best space travelers and scientist in the world.</p>
+   <section>
+    <p>Our crew is the heart and soul of Galactica. We are a diverse team of seasoned space explorers, engineers, and visionaries who are united by a common goal: to make space travel accessible and exciting for all.</p>
+    <div>
+      <h3>Our Crew</h3>
+    <p>Meet the best space travelers and scientist in the world:</p>
     <img src="/crew/image-anousheh-ansari.png" alt="Anousheh Ansari" />
-    <p>Anousheh Ansari</p>
+    <h3>Anousheh Ansari</h3>
+    <p>A former NASA astronaut with over 15 years of experience, Captain Vega leads our missions with unparalleled expertise and a passion for space exploration.</p>
     <img src="/crew/image-douglas-hurley.png" alt="Douglas Hurley" />
-    <p>Douglas Hurley</p>
+    <h3>Douglas Hurley</h3>
+    <p>Our chief astrophysicist, Dr. Redding, is a renowned scientist who has contributed to major space discoveries. He ensures that every journey is as educational as it is exhilarating.
+    </p>
     <img src="/crew/image-victor-glover.png" alt="Victor Glover" />
-    <p>Victor Glover</p>
+   <h3>Victor Glover</h3>
+    <p>With her extensive background in aerospace engineering, Hana Lee is responsible for the state-of-the-art technology that powers our spacecraft. Her innovation ensures that our travelers are always in safe hands.</p>
     <img src="/crew/image-mark-shuttleworth.png" alt="Mark Shuttleworth" />
-    <p>Mark Shuttleworth</p>
+   <h3>Mark Shuttleworth</h3>
+    <p>As a mission specialist, Alex’s job is to ensure that every aspect of the journey runs smoothly. With a background in both science and adventure tourism, Alex is the perfect guide for our space travelers.</p>
    </div>
+   </section>
   );
 }
 
