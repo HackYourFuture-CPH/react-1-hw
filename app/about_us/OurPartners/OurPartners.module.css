@@ -1,0 +1,14 @@
+.partnersContainer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+  }
+  
+  .partnersLogo{
+    padding: 30px;
+    margin: auto 0;
+  }

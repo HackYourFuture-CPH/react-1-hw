@@ -1,0 +1,30 @@
+.gridContainer {
+    font-size: 18px;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px; 
+    padding: 20px; 
+    background-color: #0e1424; 
+    text-align: justify;  
+  }
+
+  .gridItem {
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #0e1424;
+     box-shadow: 
+      0 4px 8px rgba(0, 0, 0, 0.2), 
+      0 6px 20px rgba(0, 0, 0, 0.2); 
+    background: linear-gradient(145deg, #0e1424,#393f4a); 
+  }
+
+  .title {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+    font-size: larger;
+    text-align: center;
+  }

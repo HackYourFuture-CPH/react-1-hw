@@ -1,8 +1,8 @@
 "use client"
-import classNames from 'classnames';
+//import classNames from 'classnames';
 import { usePathname } from 'next/navigation';
-import Link from 'next/link'
-
+//import Link from 'next/link'
+import NavItem from './NavItem/NavItem';
 import styles from './Navbar.module.css';
 
 const navbarItems = [
@@ -21,7 +21,7 @@ const navbarItems = [
 ];
 
 export const Navbar = () => {
-  const currentPath = usePathname()
+  const currentPath = usePathname();
 
   return (
     <header className={styles.headerContainer}>
@@ -32,10 +32,33 @@ export const Navbar = () => {
       <nav className={styles.navbar}>
         <div className={styles.navbarBG} />
         <ul className={styles.navbarList}>
+       
+        {navbarItems.map((item, index) => (
+  <NavItem
+    key={item.link} 
+    title={item.title} 
+    link={item.link} 
+    isActive={item.link === currentPath} 
+    index={index} 
+  />
+))}
+
+{/* TASK - React 1 week 3 */}
+          {/* replace repeating content by using navbarItems.map(() => <NavLink />) */}
+          </ul>
+      </nav>
+    </header>
+  );
+}
+
+
+
+
           {/* TASK - React 1 week 2 */}
           {/* Create a <NavItem> component, which accepts the following:  */}
           {/* title, link, isActive  */}
-          <li className={classNames(styles.navbarLinks, {
+
+          {/* <li className={classNames(styles.navbarLinks, {
             [styles.isLinkActive]: navbarItems[0].link === currentPath,
           })}>
             <Link href={navbarItems[0].link}><b>01</b> {navbarItems[0].title}</Link>
@@ -49,11 +72,6 @@ export const Navbar = () => {
             [styles.isLinkActive]: navbarItems[2].link === currentPath,
           })}>
             <Link href={navbarItems[2].link}><b>03</b> NASA COLLABORATION</Link>
-          </li>
-          {/* TASK - React 1 week 3 */}
-          {/* replace repeating content by using navbarItems.map(() => <NavLink />) */}
-        </ul>
-      </nav>
-    </header>
-  );
-}
+          </li> */}
+
+          

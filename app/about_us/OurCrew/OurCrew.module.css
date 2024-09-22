@@ -1,0 +1,63 @@
+.app {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    text-align: justify;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 68vw;
+    background-color: #0e1424;
+    box-shadow: 
+      0 4px 8px rgba(0, 0, 0, 0.2), 
+      0 6px 20px rgba(0, 0, 0, 0.2); 
+    background: linear-gradient(145deg, #0e1424,#1c202b); 
+  }
+
+  .description {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+
+  .crew{
+    max-width: 70%;
+    height: auto; 
+    border-radius: 8px;
+  }
+
+  .crewName{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: larger;
+  }
+
+  .crewImage {
+    max-width: 80%;
+    height: auto; 
+    border-radius: 8px; 
+  }
+
+  .container {
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+    gap:30px;
+  }
+
+  .left {
+    flex-direction: row;
+  }
+  
+  .right {
+    flex-direction: row-reverse;
+  }
+
+  .border{
+    border-bottom: 1px solid #fff;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+
+  .text {
+    width: 70%;
+    padding: 30px;
+  }
