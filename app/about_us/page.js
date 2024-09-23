@@ -1,4 +1,8 @@
+
 import styles from './page.module.css';
+import PlanetWishlistItem from '../../components/destination/PlanetWishlistItem';
+import PlanetCard from '../../components/destination/PlanetCard';
+
 
 // TASK - React 1 week 1
 // After you are finished with creating the page, move the OurValues, OurCrew, OurPartners components into their own files
