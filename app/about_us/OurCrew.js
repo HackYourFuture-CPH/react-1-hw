@@ -3,8 +3,8 @@ import styles from "./page.module.css";
 const crewFields = [
   {
     name: "Sarah Vega",
-    imageUrl: "./crew/image-anousheh-ansari.png",
     title: "Mission Commander",
+    imageUrl: "./crew/image-anousheh-ansari.png",
     description:
       "A former NASA astronaut with over 15 years of experience, Captain Vega leads our missions with unparalleled expertise and a passion for space exploration.",
   },
