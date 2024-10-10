@@ -3,7 +3,6 @@ import styles from "./page.module.css";
 const valueFields = [
   {
     heading: "1",
-    heading: "1",
     coreValues: "Exploration",
     description:
       "We are driven by a deep-seated desire to explore the unknown. We believe that the pursuit of discovery is at the heart of human nature, and we are committed to pushing the boundaries of what is possible.",
