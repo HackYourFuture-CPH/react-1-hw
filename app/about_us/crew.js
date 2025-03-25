@@ -1,13 +1,13 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image"; // Next.js Image component
+import Image from "next/image"; 
 
 const teamMembers = [
   { name: "Alice Johnson", role: "Aerospace Engineer", image: "/crew/alice.jpg" },
   { name: "Bob Smith", role: "Mission Control Director", image: "/crew/bob.jpg" },
   { name: "Charlie Brown", role: "Spacecraft Designer", image: "/crew/charlie.jpg" },
   { name: "Diana Prince", role: "Astrophysicist", image: "/crew/diana.jpg" },
-  { name: "Aminata Ba", role: "IT Specialist", image: "/crew/aminata.jpg" }, // ✅ Added Aminata
+  { name: "Aminata Ba", role: "IT Specialist", image: "/crew/aminata.jpg" }, 
 ];
 
 const OurCrew = () => {
@@ -29,7 +29,7 @@ const OurCrew = () => {
       <p>Meet the experts pioneering the next generation of space exploration:</p>
 
       <div className="carousel">
-        <button onClick={prevSlide} className="carousel-btn">❮</button>
+        <button onClick={prevSlide} className="carousel-btn"> next </button>
         <div className="carousel-slide">
           <Image
             src={teamMembers[currentIndex].image}

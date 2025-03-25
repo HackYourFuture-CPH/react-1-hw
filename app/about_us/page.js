@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import OurValues from "./values.js";
 import OurCrew from "./crew.js" ;
 import OurPartners from './OurPartners';  
+import footer from './ui/footer.js';
 
 export const Crew = () => {
   return (

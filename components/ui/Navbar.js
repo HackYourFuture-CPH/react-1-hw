@@ -19,22 +19,33 @@ const navbarItems = [
     link: '/nasa_collaboration',
   }
 ];
-
+{/* cretae navItem */}
+const NavItem = ({ title, link, isActive }) => {
+  return (
+    <li className={classNames(styles.navbarLinks, { [styles.isLinkActive]: isActive })}>
+      <Link href={link}>
+        <b>{navbarItems.findIndex((item) => item.link === link).toString().padStart(2, "0")}</b> {title}
+      </Link>
+    </li>
+  );
+};
 export const Navbar = () => {
   const currentPath = usePathname()
 
   return (
     <header className={styles.headerContainer}>
-      <div className={styles.navbarLogo}>
-        <a href="/"><img src="/shared/logo.svg" alt="" /> GALACTICA</a>
-      </div>
+    <div className={styles.navbarLogo}>
+      <Link href="/">
+        <img src="/shared/logo.svg" alt="Galactica Logo" /> GALACTICA
+      </Link>
+    </div>
       <div className={styles.decorativeLine} />
       <nav className={styles.navbar}>
         <div className={styles.navbarBG} />
         <ul className={styles.navbarList}>
-          {/* TASK - React 1 week 2 */}
-          {/* Create a <NavItem> component, which accepts the following:  */}
-          {/* title, link, isActive  */}
+        {navbarItems.map((item) => (
+            <NavItem key={item.link} title={item.title} link={item.link} isActive={currentPath === item.link} />
+          ))}
           <li className={classNames(styles.navbarLinks, {
             [styles.isLinkActive]: navbarItems[0].link === currentPath,
           })}>

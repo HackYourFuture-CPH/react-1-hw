@@ -4,49 +4,41 @@ import { useState } from 'react';
 
 import styles from '@/components/destination/destination.module.css';
 import { AddWishlistItem } from '@/components/destination/AddWishlistItem';
+import PlanetWishlistItem from "./components/PlanetWishlistItem";
 
-// TASK - React 1 week 2
-// Move this to its own file
-const PlanetWishlistItem = ({
-  name,
-  onRemove,
-  thumbnail,
-}) => {
-  return (
-    <div className={styles.wishlistItem}>
-      <img className={styles.wishlistItemThumbnail} src={thumbnail} alt="" />
-      <b>{name.toUpperCase()}</b>
-      <button onClick={onRemove}>remove</button>
-    </div>
-  );
-}
 
 
 export const Destinations = () => {
   const [selectedPlanets, onAddPlanet] = useState([]);
-
   let isPlanetSelected = false;
-  let numberOfPlanets = 0;
+  let numberOfPlanets = selectedPlanets.length;
+  const planetsList = [
+    { name: "Europa", description: "Icy moon with a subsurface ocean.", thumbnail: "/destination/image-europa.png" },
+    { name: "Moon", description: "Earth's only natural satellite.", thumbnail: "/destination/image-moon.png" },
+    { name: "Mars", description: "The Red Planet, potential for life.", thumbnail: "/destination/image-mars.png" },
+    { name: "Titan", description: "Saturn’s largest moon with thick atmosphere.", thumbnail: "/destination/image-titan.png" }
+  ];
 
-  const onAddOrRemovePlanet = (name, index) => {
-    // TASK - React 1 week 2
-    // Implement this function
-    // If you press the "ADD PLANET" the selected planet should display "SELECTED"
-    // And the counter should update, how many planets are selected (numberOfPlanets)
-    console.log(`You seleceted the following planet: ${name}, with the index of ${index}`);
+  const totalPlanets = planetsList.length; 
+  
+  const onAddOrRemovePlanet =(name, index) => {
+  SetSelectedPlanets((prevPlanets) =>
+      prevPlanets.includes(name)
+        ? prevPlanets.filter((planet) => planet !== name) 
+        : [...prevPlanets, name] );
+    console.log(`You selected the following planet: ${name}, with the index of ${index}`);
   }
-
+  
   return (
     <div className="fullBGpicture">
       <main className="mainContent">
         <h1>Travel destinations</h1>
         <section className="card">
           <h2>Wishlist</h2>
-          {/* TASK - React 1 week 2 */}
-          {/* Display the number Of selected planets */}
-          {/* Display the "no planets" message if it is empty! */}
-          <p>No planets in wishlist :(</p>
-          <p>You have {numberOfPlanets} in your wishlist</p>
+          <p>{totalPlanets === 0 ? "No planets in wishlist :(" : `Total available planets: ${totalPlanets}`}</p>
+
+
+
           <b>List coming soon after lesson 3!</b>
           
           {/* STOP! - this is for week 3!*/}

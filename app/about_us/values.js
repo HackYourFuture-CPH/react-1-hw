@@ -5,19 +5,19 @@ const OurValues = () => {
         <ol>
           <li>
             INNOVATION
-            <img src="/values/INNOVATION.webp" alt="Innovation" />
+            <img src="/.INNOVATION.webp" alt="Innovation" />
           </li>
           <li>
             RESPECT
-            <img src="/values/RESPECT.png" alt="Respect" />
+            <img src="/.RESPECT.png" alt="Respect" />
           </li>
           <li>
             INTEGRITY
-            <img src="/values/INTEGRITY.jpg" alt="Integrity" />
+            <img src="/.INTEGRITY.jpg" alt="Integrity" />
           </li>
           <li>
             TEAMWORK
-            <img src="/values/TEAMWORK.jpg" alt="Teamwork" />
+            <img src="/.TEAMWORK.jpg" alt="Teamwork" />
           </li>
         </ol>
       </div>
