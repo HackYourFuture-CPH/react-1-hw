@@ -6,7 +6,6 @@ import { AddWishlistItem } from '@/components/destination/AddWishlistItem';
 import PlanetWishlistItem from "./components/PlanetWishlistItem";
 
 
-
 const planetsList = [
   { name: "Europa", description: "Icy moon with a subsurface ocean.", thumbnail: "/destination/image-europa.png" },
   { name: "Moon", description: "Earth's only natural satellite.", thumbnail: "/destination/image-moon.png" },
