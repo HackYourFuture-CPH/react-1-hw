@@ -3,3 +3,75 @@
   width: 100vw;
   height: 100vh;
 }
+
+
+.members{
+
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-template-rows: 50px 100px 100px 100px 100px;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    
+}
+.members div{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  text-align: start;
+  width: 100%;
+  overflow: hidden;
+}
+.crewDesc{
+  grid-area: 1 / 1 / 2 / 6; 
+  
+}
+
+.members div:nth-child(1){
+
+  grid-area: 2 / 1 / 5 / 2; 
+}
+.members div:nth-child(2){
+
+  grid-area: 2 / 2 / 5 / 3;
+}
+.members div:nth-child(3){
+
+  grid-area: 2 / 3 / 5 / 4;
+}
+.members div:nth-child(4){
+
+  grid-area: 2 / 4 / 5 / 5;
+}
+.members div:nth-child(5){
+
+  grid-area: 2 / 5 / 5 / 6;
+}
+.members div:nth-child(6){
+
+  grid-area: 2 / 1 / 5/ 2;
+}
+
+.members div img{
+width: auto;
+height: 40%;
+object-fit:contain;
+margin: 10px 0;
+
+}
+.members >p{
+  width: 100%;
+}
+.members div > p{
+  margin: 10px 5px;
+  font-size: 14px;
+  
+}
+.members div  p:nth-child(3){
+  font-size: 0.7em;
+ 
+}
+
