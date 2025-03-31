@@ -20,6 +20,14 @@ const navbarItems = [
   }
 ];
 
+const NavItem = ({ title, link, isActive }) => (
+  <li className={classNames(styles.navbarLinks, {
+    [styles.isLinkActive]: isActive,
+  })}>
+    <Link href={link}><b>{title[0]}</b> {title}</Link>
+  </li>
+);
+
 export const Navbar = () => {
   const currentPath = usePathname()
 
@@ -32,9 +40,6 @@ export const Navbar = () => {
       <nav className={styles.navbar}>
         <div className={styles.navbarBG} />
         <ul className={styles.navbarList}>
-          {/* TASK - React 1 week 2 */}
-          {/* Create a <NavItem> component, which accepts the following:  */}
-          {/* title, link, isActive  */}
           <li className={classNames(styles.navbarLinks, {
             [styles.isLinkActive]: navbarItems[0].link === currentPath,
           })}>
