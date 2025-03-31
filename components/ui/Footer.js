@@ -15,7 +15,7 @@ export const Footer = () => {
       </div>
       <div className={styles.footerLinks}>
         <h3>Pages</h3>
-        <ul lassName={styles.footerList}>
+        <ul className={styles.footerList}>
         <SocialMediaItem url="https://google.com" title="Google" iconName="google" />
         <SocialMediaItem url="https://facebook.com" title="Facebook" iconName="facebook" />
         <SocialMediaItem url="https://instagram.com" title="Instagram" iconName="instagram" />
