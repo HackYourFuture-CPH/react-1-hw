@@ -54,8 +54,8 @@ export const Footer = () => {
   />
   <SocialMediaItem
     url="https://google.com"
-    title="On the streets at night"
-    icon="/socialmedia/street.png"
+    title="google"
+    icon="/socialmedia/google.png"
   />
   <SocialMediaItem
     url="https://linkedin.com"
@@ -63,7 +63,7 @@ export const Footer = () => {
     icon="/socialmedia/linkedin.png"
   />
 </ul>
-          {/* TASK - React 1 week 2 */}
+          {/* TASK - React 1 week 2    ---done-- */}
           {/* Create a <SocialMediaItem /> component and replace all of the list items! */}
           {/* it should accept the following props */}
           {/* url, title, icon */}
