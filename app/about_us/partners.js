@@ -2,7 +2,7 @@ const OurPartners = () => {
     return (
       <div>
         <p> OUR PARTNERS </p>
-        <p>They trusted us:</p>
+        <p>We collaborate with some of the most respected names in the space and technology industries to make every journey extraordinary. Our partners bring expertise, innovation, and cutting-edge advancements that enhance our space travel experiences.</p>
         <div className="partners">
           <img src="/.partner1.svg.avif" alt="Partner 1" />
           <img src="/.partner2.avif" alt="Partner 2" />
