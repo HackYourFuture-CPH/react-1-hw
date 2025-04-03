@@ -2,6 +2,7 @@
 import classNames from 'classnames';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link'
+import { NavItem } from './NavItem';
 
 import styles from './Navbar.module.css';
 
@@ -35,7 +36,16 @@ export const Navbar = () => {
           {/* TASK - React 1 week 2 */}
           {/* Create a <NavItem> component, which accepts the following:  */}
           {/* title, link, isActive  */}
-          <li className={classNames(styles.navbarLinks, {
+
+           
+            {navbarItems.map((item , index)=>(
+              <NavItem key={index} title={`${index+1} ${item.title}`} link={item.link}  isActive={item.link===currentPath}
+              />
+            ))}
+              
+
+
+       {/*   <li className={classNames(styles.navbarLinks, {
             [styles.isLinkActive]: navbarItems[0].link === currentPath,
           })}>
             <Link href={navbarItems[0].link}><b>01</b> {navbarItems[0].title}</Link>
@@ -49,7 +59,7 @@ export const Navbar = () => {
             [styles.isLinkActive]: navbarItems[2].link === currentPath,
           })}>
             <Link href={navbarItems[2].link}><b>03</b> NASA COLLABORATION</Link>
-          </li>
+          </li>      */}
           {/* TASK - React 1 week 3 */}
           {/* replace repeating content by using navbarItems.map(() => <NavLink />) */}
         </ul>
