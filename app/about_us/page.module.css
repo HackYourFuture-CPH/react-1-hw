@@ -3,3 +3,81 @@
   width: 100vw;
   height: 100vh;
 }
+
+/*Our Values*/
+.valuesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;  
+  gap: 30px; 
+  max-width: 1000px;
+  margin: auto;
+}
+
+.valueBox {
+  flex: 1 1 calc(50% - 20px); 
+  background: black; 
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 200px;
+}
+
+.valueBox h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.valueBox h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.valueBox p {
+  font-size: 16px;
+}
+
+
+/*Our Crew*/
+
+.crewContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+  
+}
+
+
+.crewBox img{
+  height: 300px;
+  width: 200px;
+
+}
+
+
+/*Our Partners*/
+
+.pContainer{
+  background-color: black;
+}
+
+.partnersContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  padding: 20px;
+}
+
+.partnersBox {
+  flex: 1 1 calc(33.33% - 20px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partnersBox img {
+  max-width: 160px; 
+  height: auto;
+}
