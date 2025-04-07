@@ -18,7 +18,8 @@ export const RootLayout = ({ children }) => {
         <Navbar />
         {children}
         {/* TASK - React 1 week 1 */}
-        {/* Import and use the Footer component here */}
+        import{ Footer } from "@/components/ui/Footer"; 
+      
         {/* Footer found in the ui/Footer.js folder */}
       </body>
     </html>
