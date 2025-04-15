@@ -3,9 +3,9 @@
 
 import { useState } from "react";
 import styles from "@/components/destination/destination.module.css";
-import { AddWishlistItem } from "@/components/destination/AddWishlistItem";
+import {AddWishlistItem} from "../../components/destination/AddWishlistItem";
 import PlanetCard from "../../components/destination/PlanetCard";
-//import PlanetWishlistItem from "../../components/destination/PlanetWishlistItem";
+import PlanetWishListItem from "../../components/destination/PlanetWishListItem";
 
 const planetData = [
   {
@@ -18,6 +18,18 @@ const planetData = [
     name: "Mars",
     description: "Mars, the Red Planet...",
     thumbnail: "/destination/image-mars.png",
+    isSelected: false,
+  },
+  {
+    name: "Moon",
+    description: "The Moon, Earth's only natural satellite....",
+    thumbnail: "/destination/image-moon.png",
+    isSelected: false,
+  },
+  {
+    name: "Titan",
+    description: "Titan, Saturn’s largest moon..",
+    thumbnail: "/destination/image-titan.png",
     isSelected: false,
   }
 ];
@@ -38,10 +50,22 @@ const onAddOrRemovePlanet = (name,index) => {
     });
     console.log(`You seleceted the following planet: ${name}, with the index of ${index}`);
   };
+
+
   const numberOfPlanets = selectedPlanets.length;
+
+  const removeFromWishlist = (name) => {
+    onAddOrRemovePlanet(name);
+  };
+
+  const handleAddWishlistItem = (newPlanet) => {
+    setPlanets((prevPlanets) => [...prevPlanets, newPlanet]);
+  };
+
   return (
     <div className="fullBGpicture">
       <main className="mainContent">
+
         <h1>Travel destinations</h1>
         <section className="card">
           <h2>Wishlist</h2>
@@ -51,8 +75,8 @@ const onAddOrRemovePlanet = (name,index) => {
             <p>You have {numberOfPlanets} planets in your wishlist.</p>
           )}
           <b>List coming soon after lesson 3!</b>
-
           </section>
+
         <section className="card">
           <h2>Possible destinations</h2>
           {planets.map((planet) => (
@@ -65,29 +89,21 @@ const onAddOrRemovePlanet = (name,index) => {
               onAddOrRemovePlanet={() => onAddOrRemovePlanet(planet.name)}
             />
           ))}
+
+          <AddWishlistItem onAddWishlistItem={handleAddWishlistItem}/>
           
-          {/* STOP! - this is for week 3!*/}
-          {/* TASK - React 1 week 3 */}
-          {/* Import the AddWishlistItem react component */}
-          {/* <AddWishlistItem /> */}
-          {/* TASK - React 1 week 3 */}
-          {/* Convert the list, so it is using selectedPlanets.map() to display the items  */}
-          {/* Implement the "REMOVE" function */}
-          {/* uncomment the following code snippet: */}
-          {/* 
           <h3>Your current wishlist</h3>
           <div className={styles.wishlistList}>
-            <PlanetWishlistItem 
-              name="europa"
-              onRemove={() => removeFromWishlist('europa')}
-              thumbnail="/destination/image-europa.png"
-            />
-            <PlanetWishlistItem 
-              name="europa"
-              onRemove={() => removeFromWishlist('europa')}
-              thumbnail="/destination/image-europa.png"
-            />
-          </div> */}
+            {selectedPlanets.map((planet) => (
+              <PlanetWishListItem
+                key={planet.name}
+                name={planet.name}
+                thumbnail={planet.thumbnail}
+                onRemove={() => removeFromWishlist(planet.name)}
+              />
+            ))}
+          </div>
+
         </section>
       </main>
     </div>
