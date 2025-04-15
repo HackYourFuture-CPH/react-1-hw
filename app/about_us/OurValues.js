@@ -32,7 +32,7 @@ const values = [
 ];
 const OurValues = () => {
     return (
-        <div className={styles.ourValuesMission}>
+        <section className={styles.ourValuesMission}>
             <h1>Our mission & Values</h1>
             <p>At Galactica, we are driven by our core values that guide our mission and shape our culture. These values reflect our commitment to exploration, innovation, sustainability, community, and safety.</p>
 
@@ -52,7 +52,7 @@ const OurValues = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
 
     );
 };
