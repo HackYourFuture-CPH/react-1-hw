@@ -3,9 +3,9 @@
 import { useState } from "react";
 
 import styles from "@/components/destination/destination.module.css";
-import { AddWishlistItem } from "@/components/destination/AddWishlistItem";
-import { PlanetCard } from "@/components/destination/planetCard";
-import { PlanetWishlistItem } from "@/components/destination/planetWishlistItem";
+import { AddWishlistItem } from "@/components/destination/AddWishlistItem"; 
+import { PlanetCard } from "@/components/destination/PlanetCard";
+import { PlanetWishlistItem } from "@/components/destination/PlanetWishlistItem";
 
 const allPlanets = [
   {

@@ -3,7 +3,7 @@ import styles from '@/components/destination/destination.module.css';
 
 
 
- export function planetCard (props) {
+ export function PlanetCard () {
     const { name, description, thumbnail, isPlanetSelected, onAddOrRemovePlanet } = props;
 
     return (
