@@ -42,9 +42,6 @@ export const Destinations = () => {
         <h1>Travel destinations</h1>
         <section className="card">
           <h2>Wishlist</h2>
-          {/* TASK - React 1 week 2 */}
-          {/* Display the number Of selected planets */}
-          {/* Display the "no planets" message if it is empty! */}
           <p>No planets in wishlist :(</p>
           <p>You have {numberOfPlanets} in your wishlist</p>
           <b>List coming soon after lesson 3!</b>
