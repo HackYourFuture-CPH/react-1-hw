@@ -1,24 +1,17 @@
 "use client";
 
 import { useState } from 'react';
-
 import styles from '@/components/destination/destination.module.css';
-import { AddWishlistItem } from '@/components/destination/AddWishlistItem';
+import { AddWishlistItem } from '@/components/destination/AddWishlistItem'; // Assuming this exists
 
-const PlanetWishlistItem = ({
-  name,
-  onRemove,
-  thumbnail,
-}) => {
-  return (
-    <div className={styles.wishlistItem}>
-      <img className={styles.wishlistItemThumbnail} src={thumbnail} alt="" />
-      <b>{name.toUpperCase()}</b>
-      <button onClick={onRemove}>remove</button>
-    </div>
-  );
-}
-
+// Planet Wishlist Item Component
+const PlanetWishlistItem = ({ name, onRemove, thumbnail }) => (
+  <div className={styles.wishlistItem}>
+    <img className={styles.wishlistItemThumbnail} src={thumbnail} alt={`Thumbnail of ${name}`} />
+    <b>{name.toUpperCase()}</b>
+    <button onClick={onRemove}>remove</button>
+  </div>
+);
 
 export const Destinations = () => {
   const [selectedPlanets, setSelectedPlanets] = useState([]);
@@ -46,13 +39,15 @@ export const Destinations = () => {
     <div className="fullBGpicture">
       <main className="mainContent">
         <h1>Travel destinations</h1>
+
+        {/* Wishlist Section */}
         <section className="card">
           <h2>Wishlist</h2>
           {selectedPlanets.length === 0 ? (
             <p>No planets in wishlist :(</p>
           ) : (
             <>
-              <p>You have {selectedPlanets.length} planets in your wishlist:</p>
+              <p>You have {selectedPlanets.length} planet(s) in your wishlist:</p>
               <div className={styles.wishlistList}>
                 {selectedPlanets.map((planet) => (
                   <PlanetWishlistItem
@@ -66,31 +61,12 @@ export const Destinations = () => {
             </>
           )}
         </section>
-          
-          {/* STOP! - this is for week 3!*/}
-          {/* TASK - React 1 week 3 */}
-          {/* Import the AddWishlistItem react component */}
-          {/* <AddWishlistItem /> */}
-          {/* TASK - React 1 week 3 */}
-          {/* Convert the list, so it is using selectedPlanets.map() to display the items  */}
-          {/* Implement the "REMOVE" function */}
-          {/* uncomment the following code snippet: */}
-          {/* 
-          <h3>Your current wishlist</h3>
-          <div className={styles.wishlistList}>
-            <PlanetWishlistItem 
-              name="europa"
-              onRemove={() => removeFromWishlist('europa')}
-              thumbnail="/destination/image-europa.png"
-            />
-            <PlanetWishlistItem 
-              name="europa"
-              onRemove={() => removeFromWishlist('europa')}
-              thumbnail="/destination/image-europa.png"
-            />
-          </div> */}
-     
-     <section className="card">
+
+        {/* Optional AddWishlistItem Component */}
+        <AddWishlistItem onAddPlanet={onAddOrRemovePlanet} /> {/* If you want to use this component */}
+
+        {/* Possible Destinations Section */}
+        <section className="card">
           <h2>Possible Destinations</h2>
           <div className={styles.planetContainer}>
             {planets.map((planet) => {
