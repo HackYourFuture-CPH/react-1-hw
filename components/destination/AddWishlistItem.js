@@ -1,24 +1,21 @@
 "use client";
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styles from './destination.module.css';
 
 export const AddWishlistItem = ({
   onAddWishlistItem,
 }) => {
   const [thumbnail, onThumbnailChange] = useState('/destination/image-europa.png');
-  // TASK - React 1 week 3
-  // 1. Add a useState for the handling the <input id="customWishlist" type="text" />
-  // 2. Connect the onThumbnailChange to the <select>
+  const [planetName, setPlanetName] = useState(''); 
 
   const onAddItemPressed = () => {
-    // TASK - React 1 week 3
-    // implement this function
-    // Clear the <input/> field on button press
-    // pass the thumbnail and the name from the input to the onAddWishlistItem function
-    // call the onAddWishlistItem here
-  }
+    if (!planetName.trim()) return; // Avoid adding empty planet names
 
+    onAddWishlistItem({ name: planetName, thumbnail }); // Call parent function
+    setPlanetName(''); // Clear input
+    setThumbnail('/destination/image-europa.png'); // Optionally reset select
+  };
 
   return (
     <div className={styles.addWishlistItem}>
@@ -32,7 +29,7 @@ export const AddWishlistItem = ({
         <option value="/destination/image-moon.png">MOON</option>
         <option value="/destination/image-titan.png">TITAN</option>
       </select>
-      <button>ADD CUSTOM</button>
+      <button onClick={onAddItemPressed}>ADD CUSTOM</button>
     </div>
   );
 };
