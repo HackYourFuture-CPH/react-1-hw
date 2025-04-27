@@ -20,6 +20,14 @@ const navbarItems = [
   }
 ];
 
+const NavItem = ({ title, link, isActive }) => (
+  <li className={classNames(styles.navbarLinks, {
+    [styles.isLinkActive]: isActive,
+  })}>
+    <Link href={link}><b>{title[0]}</b> {title}</Link>
+  </li>
+);
+
 export const Navbar = () => {
   const currentPath = usePathname()
 
@@ -32,26 +40,14 @@ export const Navbar = () => {
       <nav className={styles.navbar}>
         <div className={styles.navbarBG} />
         <ul className={styles.navbarList}>
-          {/* TASK - React 1 week 2 */}
-          {/* Create a <NavItem> component, which accepts the following:  */}
-          {/* title, link, isActive  */}
-          <li className={classNames(styles.navbarLinks, {
-            [styles.isLinkActive]: navbarItems[0].link === currentPath,
-          })}>
-            <Link href={navbarItems[0].link}><b>01</b> {navbarItems[0].title}</Link>
-          </li>
-          <li className={classNames(styles.navbarLinks, {
-            [styles.isLinkActive]: navbarItems[1].link === currentPath,
-          })}>
-            <Link href={navbarItems[1].link}><b>02</b> {navbarItems[1].title}</Link>
-          </li>
-          <li className={classNames(styles.navbarLinks, {
-            [styles.isLinkActive]: navbarItems[2].link === currentPath,
-          })}>
-            <Link href={navbarItems[2].link}><b>03</b> NASA COLLABORATION</Link>
-          </li>
-          {/* TASK - React 1 week 3 */}
-          {/* replace repeating content by using navbarItems.map(() => <NavLink />) */}
+        {navbarItems.map((item, index) => (
+            <NavItem 
+              key={item.link}
+              title={`${index + 1} ${item.title}`} 
+              link={item.link} 
+              isActive={item.link === currentPath} 
+            />
+          ))}
         </ul>
       </nav>
     </header>
