@@ -1,5 +1,5 @@
 # Galactica Space Travel App
-
+ 
 ## Introduction
 Galactica is a space travel application built with Next.js and React. This project aims to teach students the fundamentals of React and Next.js by creating a dynamic and interactive space exploration app.
 
