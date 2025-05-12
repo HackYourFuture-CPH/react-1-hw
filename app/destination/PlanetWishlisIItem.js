@@ -2,8 +2,7 @@
 import React from 'react';
 import styles from '@/components/destination/destination.module.css';
 
-// TASK - React 1 week 2
-// Move this to its own file
+
 const PlanetWishlistItem = ({ name, onRemove,thumbnail,}) => {
     return (
       <div className={styles.wishlistItem}>
@@ -12,5 +11,5 @@ const PlanetWishlistItem = ({ name, onRemove,thumbnail,}) => {
         <button onClick={onRemove}>remove</button>
       </div>
     );
-  }
+  };
   export default PlanetWishlistItem;

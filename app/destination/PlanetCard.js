@@ -3,7 +3,7 @@ import styles from '@/components/destination/destination.module.css';
 
 
 
- export function PlanetCard () {
+export function PlanetCard(props) {
     const { name, description, thumbnail, isPlanetSelected, onAddOrRemovePlanet } = props;
 
     return (
@@ -12,15 +12,16 @@ import styles from '@/components/destination/destination.module.css';
             <div className={styles.planetDescription}>
                 <h2>{name} {isPlanetSelected ? "- SELECTED" :""}</h2>
                 <p>{description}</p>
-                 </div>  
-                <button
-                    className={isPlanetSelected ? styles.removeButton : styles.addButton}
-                    onClick={() => onAddOrRemovePlanet(name)}
-                >
-                    {isPlanetSelected ? 'REMOVE PLANET' : 'ADD PLANET'}
-                </button>
-            </div>
-
-
+            </div>  
+            <button
+                className={isPlanetSelected ? styles.removeButton : styles.addButton}
+                onClick={() => onAddOrRemovePlanet(name)}
+            >
+                {isPlanetSelected ? 'REMOVE PLANET' : 'ADD PLANET'}
+            </button>
+        </div>
     );
 }
+
+export default PlanetCard; 
+
