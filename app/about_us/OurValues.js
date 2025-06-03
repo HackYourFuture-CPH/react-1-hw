@@ -27,7 +27,6 @@ export const OurValues = () => {
         </p>
       </div>
       <div>
-        {" "}
         <h3>Innovation:</h3>
         <p>
           At Galactica, we prioritize cutting-edge technology and innovation. We
