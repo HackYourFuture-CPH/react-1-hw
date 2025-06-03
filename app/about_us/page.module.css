@@ -4,14 +4,6 @@
   height: 100vh;
 }
 
-.ourValuesImage {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-  border-radius: 12px;
-  object-fit: contain;
-}
 
 .crewSection {
   padding: 1rem;
@@ -51,7 +43,7 @@
 }
 
 
- .valuesSection {
+ .valuesContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
