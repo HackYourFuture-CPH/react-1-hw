@@ -13,7 +13,7 @@ export const OurPartners = () => {
           We collaborate with some of the most respected names in the space and
           technology industries to make every journey extraordinary.
         </p>
-        <div>
+        <div className={styles.partnerLogoContainer}>
           <img
             className={styles.partnerLogo}
             src="/business_partners/alphabet-logo.png"

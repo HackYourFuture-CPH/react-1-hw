@@ -7,19 +7,8 @@ export const OurValues = () => {
   // Some inspiration ideas found in /data/inspiration_about_us
   return (
     <section className={styles.valuesContainer}>
-      {/* <h3>Mission</h3>
-      <p>
-        At Galactica, our mission is to unlock the wonders of the universe for
-        everyone. We believe that space is the final frontier and that the
-        opportunity to explore it should be within everyone’s reach. Our
-        journeys are designed to inspire, educate, and provide a
-        once-in-a-lifetime experience that transcends the ordinary.
-      </p>
-
-      <h3>Values</h3> */}
-
       <div>
-        <h3>Exploration:</h3>
+        <h3>1. Exploration</h3>
         <p>
           We are driven by a deep-seated desire to explore the unknown. We
           believe that the pursuit of discovery is at the heart of human nature,
@@ -27,7 +16,7 @@ export const OurValues = () => {
         </p>
       </div>
       <div>
-        <h3>Innovation:</h3>
+        <h3>2. Innovation</h3>
         <p>
           At Galactica, we prioritize cutting-edge technology and innovation. We
           are constantly evolving our spacecraft, safety protocols, and services
@@ -36,7 +25,7 @@ export const OurValues = () => {
         </p>
       </div>
       <div>
-        <h3>Sustainability:</h3>
+        <h3>3. Sustainability</h3>
         <p>
           We are committed to making space exploration sustainable for future
           generations. Our space missions are designed to minimize environmental
@@ -46,7 +35,7 @@ export const OurValues = () => {
       </div>
 
       <div>
-        <h3>Community:</h3>
+        <h3>4. Community</h3>
         <p>
           We believe in the power of collective exploration. Our journeys are
           not just about reaching new destinations; they are about building a
