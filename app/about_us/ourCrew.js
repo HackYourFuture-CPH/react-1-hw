@@ -42,8 +42,8 @@ const OurCrew = () => {
   return (
     <div className={styles.crewSection}>
       <p>
-        Meet the dedicated team behind our success. Each member brings unique
-        skills and passion to our mission.
+        Meet the passionate individuals whose unique skills combine to make our
+        mission possible.
       </p>
       <div className={styles.crewMembers}>
         {crewMembers.map((member) => (
