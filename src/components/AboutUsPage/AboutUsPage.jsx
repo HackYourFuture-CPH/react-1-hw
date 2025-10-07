@@ -1,4 +1,4 @@
-import styles from './AboutUsPage.css';
+import styles from './AboutUsPage.module.css';
 
 // TASK - React 1 week 1
 // After you are finished with creating the page, move the OurValues, OurCrew, OurPartners components into their own files

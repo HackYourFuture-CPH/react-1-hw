@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import './DestinationPage.css';
+import styles from './DestinationPage.module.css';
 
 export const AddWishlistItem = ({
   onAddWishlistItem,

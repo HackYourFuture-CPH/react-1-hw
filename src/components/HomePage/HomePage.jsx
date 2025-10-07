@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './HomePage.css';
+import styles from './HomePage.module.css';
 
 const HeroSection = () => {
   return (

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import './DestinationPage.css';
+import styles from './DestinationPage.module.css';
 import { AddWishlistItem } from './AddWishlistItem.jsx';
 
 // TASK - React 1 week 2
