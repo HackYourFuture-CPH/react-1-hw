@@ -6,7 +6,7 @@ import styles from './Footer.module.css';
 export const Footer = () => {
   const { pathname } = useLocation();
   const path = pathname.split("?")[0];
-  
+
   return (
     <footer className={path !== "/" ? styles.footer : styles.hidden}>
       <div className={styles.footerDescription}>
@@ -24,7 +24,7 @@ export const Footer = () => {
           ...
         </ul>
       </div> */}
-      {/* Docs for the Link: https://nextjs.org/docs/pages/api-reference/components/link */}
+      {/* Docs for the Link: https://react.dev/reference/react-dom/components/link */}
 
       {/* TASK - React 1 week 1 */}
       {/* Add a new list item for LINKEDIN */}
