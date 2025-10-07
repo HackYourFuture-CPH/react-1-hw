@@ -1,27 +1,21 @@
-import { Inter } from "next/font/google";
-import "@/src/main.css";
-
-import { Navbar } from "@/src/components/ui/Navbar";
-import { Footer } from "@/src/components/ui/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Outlet } from "react-router-dom";
+import { Navbar } from "./ui/Navbar.jsx";
+import { Footer } from "./ui/Footer.jsx";
 
 export const metadata = {
   title: "Galactica",
   description: "Your space travel agency",
 };
 
-export const RootLayout = ({ children }) => {
+export const RootLayout = () => {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        {children}
-        {/* TASK - React 1 week 1 */}
-        {/* Import and use the Footer component here */}
-        {/* Footer found in the ui/Footer.js folder */}
-      </body>
-    </html>
+    <div className="inter">
+      <Navbar />
+      <Outlet />
+      {/* TASK - React 1 week 1 */}
+      {/* Import and use the Footer component here */}
+      {/* Footer found in the ui/Footer.js folder */}
+    </div>
   );
 }
 
