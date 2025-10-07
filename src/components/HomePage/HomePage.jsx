@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import './HomePage.css';
 
-
 const HeroSection = () => {
   return (
     <main className={styles.hero}>
