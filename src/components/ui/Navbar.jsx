@@ -1,6 +1,6 @@
 "use client"
 import classNames from 'classnames';
-import { usePathname } from 'next/navigation';
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import styles from './Navbar.module.css';
@@ -21,7 +21,7 @@ const navbarItems = [
 ];
 
 export const Navbar = () => {
-  const currentPath = usePathname()
+  const currentPath = useLocation().pathname;
 
   return (
     <header className={styles.headerContainer}>
