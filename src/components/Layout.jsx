@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import { Navbar } from "@/components/ui/Navbar";
-import { Footer } from "@/components/ui/Footer";
+import { Navbar } from "@/src/components/ui/Navbar";
+import { Footer } from "@/src/components/ui/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 

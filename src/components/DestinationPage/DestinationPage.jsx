@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 import styles from '@/components/destination/destination.module.css';
-import { AddWishlistItem } from '@/components/destination/AddWishlistItem';
+import { AddWishlistItem } from '@/src/components/destination/AddWishlistItem';
 
 // TASK - React 1 week 2
 // Move this to its own file
