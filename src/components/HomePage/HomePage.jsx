@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from "react-router-dom";
 import styles from './page.module.css';
 
 
@@ -14,7 +14,7 @@ const HeroSection = () => {
           a truly out of this world experience!
         </p>
       </div>
-      <Link href="/about_us" className={styles.exploreButton}>EXPLORE</Link>
+      <Link to="/about_us" className={styles.exploreButton}>EXPLORE</Link>
     </main>
   );
 };
