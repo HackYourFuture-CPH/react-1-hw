@@ -17,11 +17,11 @@ const router = createBrowserRouter([
     element: <DestinationPage />,
   },
   {
-    path: "/about",
+    path: "/about_us",
     element: <AboutUsPage />,
   },
   {
-    path: "/collaboration",
+    path: "/nasa_collaboration",
     element: <NasaCollaboration />,
   },
 
