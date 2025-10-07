@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 
-import styles from '@/components/destination/destination.module.css';
-import { AddWishlistItem } from '@/src/components/destination/AddWishlistItem';
+import './DestinationPage.css';
+import { AddWishlistItem } from './AddWishlistItem.jsx';
 
 // TASK - React 1 week 2
 // Move this to its own file
