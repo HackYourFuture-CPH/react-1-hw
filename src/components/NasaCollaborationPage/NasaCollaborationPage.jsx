@@ -42,7 +42,7 @@ export const NasaCollaboration = () => {
         <section className="card">
           <h2>Rover Photos</h2>
           {/* TASK - React 1 week 3 */}
-          {/* Iteratate over the roverPhoto?.photos array and display all the pictures! */}
+          {/* Iterate over the roverPhoto?.photos array and display all the pictures! */}
           {
             roverPhoto?.photos?.length ? (
               <>
