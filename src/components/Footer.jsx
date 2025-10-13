@@ -3,10 +3,9 @@ import styles from './Footer.module.css';
 
 export const Footer = () => {
   const { pathname } = useLocation();
-  const path = pathname.split("?")[0];
 
   return (
-    <footer className={path !== "/" ? styles.footer : styles.hidden}>
+    <footer className={pathname !== "/" ? styles.footer : styles.hidden}>
       <div className={styles.footerDescription}>
         <h3>Galactica</h3>
         <p>Explore the universe and beyond. Your journey to the stars starts here.</p>
