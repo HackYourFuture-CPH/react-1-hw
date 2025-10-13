@@ -8,7 +8,7 @@ import styles from './AboutUsPage.module.css';
 const OurValues = () => {
   // TASK - React 1 week 1
   // Create the "Our Values" section
-  // Use the descriptions provided in /app/about_us/README.md
+  // Use the descriptions provided in /src/pages/AboutUsPage/README.md
   // Some inspiration ideas found in /data/inspiration_about_us
   return (
     <p> ADD OUR VALUES HERE </p>
@@ -18,7 +18,7 @@ const OurValues = () => {
 const OurCrew = () => {
   // TASK - React 1 week 1
   // Create the "Our Crew section"
-  // Use the descriptions provided in /app/about_us/README.md
+  // Use the descriptions provided in /src/pages/AboutUsPage/README.md
   // Use the pictures from /public/crew
   // Some inspiration ideas found in /data/inspiration_about_us
   return (
@@ -29,7 +29,7 @@ const OurCrew = () => {
 const OurPartners = () => {
   // TASK - React 1 week 1
   // Create the "Our Crew section"
-  // Use the descriptions provided in /app/about_us/README.md
+  // Use the descriptions provided in /src/pages/AboutUsPage/README.md
   // Use the pictures from /public/crew
   // Some inspiration ideas found in /data/inspiration_about_us
   return (

@@ -1,14 +1,11 @@
-"use client"
-
 import { useLocation } from "react-router-dom";
 import styles from './Footer.module.css';
 
 export const Footer = () => {
   const { pathname } = useLocation();
-  const path = pathname.split("?")[0];
 
   return (
-    <footer className={path !== "/" ? styles.footer : styles.hidden}>
+    <footer className={pathname !== "/" ? styles.footer : styles.hidden}>
       <div className={styles.footerDescription}>
         <h3>Galactica</h3>
         <p>Explore the universe and beyond. Your journey to the stars starts here.</p>
@@ -24,7 +21,7 @@ export const Footer = () => {
           ...
         </ul>
       </div> */}
-      {/* Docs for the Link: https://react.dev/reference/react-dom/components/link */}
+      {/* Docs for the Link: https://reactrouter.com/api/components/Link#link */}
 
       {/* TASK - React 1 week 1 */}
       {/* Add a new list item for LINKEDIN */}

@@ -1,9 +1,6 @@
-"use client";
-
 import { useState } from 'react';
 
 import styles from './DestinationPage.module.css';
-import { AddWishlistItem } from './AddWishlistItem.jsx';
 
 // TASK - React 1 week 2
 // Move this to its own file
