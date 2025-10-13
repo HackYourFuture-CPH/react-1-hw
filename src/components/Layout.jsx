@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Navbar } from "./ui/Navbar.jsx";
-import { Footer } from "./ui/Footer.jsx";
+import { Navbar } from "./Navbar.jsx";
 
 export const metadata = {
   title: "Galactica",

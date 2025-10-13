@@ -1,5 +1,3 @@
-"use client"
-
 import { useLocation } from "react-router-dom";
 import styles from './Footer.module.css';
 
@@ -24,7 +22,7 @@ export const Footer = () => {
           ...
         </ul>
       </div> */}
-      {/* Docs for the Link: https://react.dev/reference/react-dom/components/link */}
+      {/* Docs for the Link: https://reactrouter.com/api/components/Link#link */}
 
       {/* TASK - React 1 week 1 */}
       {/* Add a new list item for LINKEDIN */}
