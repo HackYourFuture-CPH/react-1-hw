@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import styles from './page.module.css';
+import styles from './NasaCollaborationPage.module.css';
 
 // Read "/app/nasa_collaboration/README.md" for more info about the API_KEY
 // You need a proper API_KEY for the requests to work
@@ -42,7 +42,7 @@ export const NasaCollaboration = () => {
         <section className="card">
           <h2>Rover Photos</h2>
           {/* TASK - React 1 week 3 */}
-          {/* Iteratate over the roverPhoto?.photos array and display all the pictures! */}
+          {/* Iterate over the roverPhoto?.photos array and display all the pictures! */}
           {
             roverPhoto?.photos?.length ? (
               <>

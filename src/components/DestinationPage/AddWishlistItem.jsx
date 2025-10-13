@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import styles from './destination.module.css';
+import styles from './DestinationPage.module.css';
 
 export const AddWishlistItem = ({
   onAddWishlistItem,
@@ -18,7 +18,6 @@ export const AddWishlistItem = ({
     // pass the thumbnail and the name from the input to the onAddWishlistItem function
     // call the onAddWishlistItem here
   }
-
 
   return (
     <div className={styles.addWishlistItem}>

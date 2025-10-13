@@ -215,3 +215,7 @@ button {
 .fullBGpicture > main {
   overflow: auto;
 }
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
